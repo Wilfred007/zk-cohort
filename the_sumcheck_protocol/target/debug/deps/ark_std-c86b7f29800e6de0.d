@@ -1,0 +1,11 @@
+C:\Users\USER\Desktop\Zk-Cohort\the_sumcheck_protocol\target\debug\deps\libark_std-c86b7f29800e6de0.rmeta: C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\lib.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\rand_helper.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\perf_trace.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\iterable\mod.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\iterable\rev.rs
+
+C:\Users\USER\Desktop\Zk-Cohort\the_sumcheck_protocol\target\debug\deps\libark_std-c86b7f29800e6de0.rlib: C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\lib.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\rand_helper.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\perf_trace.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\iterable\mod.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\iterable\rev.rs
+
+C:\Users\USER\Desktop\Zk-Cohort\the_sumcheck_protocol\target\debug\deps\ark_std-c86b7f29800e6de0.d: C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\lib.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\rand_helper.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\perf_trace.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\iterable\mod.rs C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\iterable\rev.rs
+
+C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\lib.rs:
+C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\rand_helper.rs:
+C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\perf_trace.rs:
+C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\iterable\mod.rs:
+C:\Users\USER\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-std-0.4.0\src\iterable\rev.rs:
