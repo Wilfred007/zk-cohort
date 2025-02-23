@@ -25,6 +25,8 @@ pub struct Verifier<F: PrimeField> {
     _phantom: PhantomData<F>,
 }
 
+
+//Reducing the polynomial into a univariate polynomial
 fn divide_poly_and_sum<F: PrimeField>(poly_eval_values: &Vec<F>) -> Vec<F> {
     let mut univariate_poly: Vec<F> = Vec::with_capacity(2);
     let middle_point = poly_eval_values.len() / 2;
@@ -41,7 +43,7 @@ fn divide_poly_and_sum<F: PrimeField>(poly_eval_values: &Vec<F>) -> Vec<F> {
 
 fn convert_elements_to_bytes<F: PrimeField>(field_element: F) -> Vec<u8> {
     let big_int = field_element.into_bigint();
-    big_int.to_bytes_le() // Changed to little-endian for consistency
+    big_int.to_bytes_le() 
 }
 
 impl<F: PrimeField> Prover<F> {
