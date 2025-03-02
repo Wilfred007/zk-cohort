@@ -6,8 +6,15 @@ edition = "2021"
 [dependencies]
 ark-bn254 = "0.5.0"
 ark-ff = "0.5.0"
+# layers = {path = "../layers"}
 
 
 [lib]
 name = "circuits"
-path = "src/gates.rs"
+path = "src/lib.rs"
+
+# name = "circuits"
+# [[bin]]
+# name = "circuits"
+# path = "src/layer.rs"
+

@@ -8,7 +8,7 @@ use std::marker::PhantomData;
 // Represents the entity proving the correctness of a claim about a multilinear polynomial.
 pub struct Prover<F: PrimeField> {
     initial_poly: MultilinearEvalForm<F>, // Holds the polynomial being proven.
-    initial_claimed_sum: F, // Stores the sum of all evaluations of the polynomial.
+    initial_claimed_sum: F, // Stores the sum of all evaluations of the polynomial over the boolean hypercube.
     transcript: Transcript<F, Keccak256>, // The Fiat-Shamir transcript for generating deterministic challenges.
     round_proof_poly: Vec<MultilinearEvalForm<F>>, // Stores intermediate univariate polynomials for each round.
 }
@@ -29,12 +29,13 @@ pub struct Verifier<F: PrimeField> {
 //Reducing the polynomial into a univariate polynomial
 fn divide_poly_and_sum<F: PrimeField>(poly_eval_values: &Vec<F>) -> Vec<F> {
     let mut univariate_poly: Vec<F> = Vec::with_capacity(2);
+    //Why?
     let middle_point = poly_eval_values.len() / 2;
     let (left, right) = poly_eval_values.split_at(middle_point);
 
     let sum_left_hand: F = left.iter().sum();
     let sum_right_hand: F = right.iter().sum();
-
+    
     univariate_poly.push(sum_left_hand);
     univariate_poly.push(sum_right_hand);
 
@@ -91,7 +92,7 @@ impl<F: PrimeField> Prover<F> {
             let random_challenge: F = self.transcript.hash();
             println!("Round {}: Challenge: {:?}", round, random_challenge);
 
-            let evaluated = current_poly.partial_evaluate(round.try_into().unwrap(), random_challenge);
+            let evaluated = current_poly.partial_evaluate(0, random_challenge);
             current_poly = MultilinearEvalForm::new(&evaluated);
         }
 
