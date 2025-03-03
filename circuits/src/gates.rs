@@ -40,29 +40,29 @@ impl Gate {
 }
 
 
-// #[cfg(test)]
-// mod tests {
-//     use super::*;
-//     use ark_bn254::Fq;
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use ark_bn254::Fq;
 
-//     #[test]
-//     fn test_gate_creation() {
-//         let gate = Gate::new(1, 2, 3, Op::Add); // Creating a sample gate
-//         assert_eq!(gate.input1, 1);
-//         assert_eq!(gate.input2, 2);
-//         assert_eq!(gate.output, 3);
-//         assert_eq!(matches!(gate.op, Op::Add), true);
-//     }
+    #[test]
+    fn test_gate_creation() {
+        let gate = Gate::new(1, 2, 3, Op::Add); // Creating a sample gate
+        assert_eq!(gate.input1, 1);
+        assert_eq!(gate.input2, 2);
+        assert_eq!(gate.output, 3);
+        assert_eq!(matches!(gate.op, Op::Add), true);
+    }
 
-//     #[test]
-//     fn test_gate_evaluation() {
-//         // Creating a sample gate and testing the evaluation
-//         let gate = Gate::new(0, 1, 2, Op::Add);
-//         let inputs: Vec<Fq> = vec![Fq::from(3), Fq::from(4)]; // Inputs as Fq
-//         let mut output: Vec<Fq> = vec![Fq::from(0), Fq::from(0), Fq::from(0)];
+    #[test]
+    fn test_gate_evaluation() {
+        // Creating a sample gate and testing the evaluation
+        let gate = Gate::new(0, 1, 2, Op::Add);
+        let inputs: Vec<Fq> = vec![Fq::from(3), Fq::from(4)]; // Inputs as Fq
+        let mut output: Vec<Fq> = vec![Fq::from(0), Fq::from(0), Fq::from(0)];
 
-//         gate.evaluate(&inputs, &mut output);
+        gate.evaluate(&inputs, &mut output);
 
-//         assert_eq!(output[2], Fq::from(7)); // 3 + 4 = 7, so output[2] should be 7
-//     }
-// }
+        assert_eq!(output[2], Fq::from(7)); // 3 + 4 = 7, so output[2] should be 7
+    }
+}

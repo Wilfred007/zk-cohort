@@ -21,7 +21,6 @@ impl Layer {
             gate.evaluate(&inputs, &mut output);
         }
         output
-        // println!("Output: {:?}", output);
     }
 }
 
